@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OS Scheduler: SJF vs Priority</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CPU Scheduling Simulator</h1>
+    </header>
+
+    <main>
+        <!-- YASSIN'S ZONE: Input Form -->
+        <section id="input-section">
+            <h2>Add Processes</h2>
+            <!-- TODO (Yassin): Build form inputs for Process ID, Arrival, Burst, and Priority -->
+            <!-- TODO (Yassin): Add buttons to "Add to Queue", "Run SJF", "Run Priority" -->
+            
+            <!-- AMIR'S ZONE: Test cases trigger -->
+            <!-- TODO (Amir): Add quick-load buttons for "Load Starvation Test", "Load Conflict Test" -->
+        </section>
+
+        <!-- GEORGE'S ZONE: Output Display -->
+        <section id="output-section">
+            <h2>Gantt Chart</h2>
+            <div id="gantt-container">
+                <!-- TODO (George): Dynamically render Gantt chart blocks here using JS -->
+            </div>
+
+            <h2>Metrics Table</h2>
+            <table id="metrics-table">
+                <thead>
+                    <tr>
+                        <th>Process ID</th>
+                        <th>Arrival</th>
+                        <th>Burst</th>
+                        <th>Finish Time</th>
+                        <th>Wait Time (WT)</th>
+                        <th>Turnaround (TAT)</th>
+                        <th>Response (RT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO (George): Populate table rows dynamically via JS -->
+                </tbody>
+            </table>
+            
+            <!-- AMIR'S ZONE: Averages Display -->
+            <div id="averages-container">
+                 <!-- TODO (Amir & George): Display Average WT and TAT here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
